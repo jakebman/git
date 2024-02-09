@@ -79,7 +79,7 @@ mode_grep() {
 }
 
 mode_ws() {
-	git diff --check "$@"
+	git diff --check --relative "$@"
 }
 
 use_stdout=
